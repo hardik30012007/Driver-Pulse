@@ -1,3 +1,4 @@
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000/api';
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, X, Send, Loader2, MapPin } from 'lucide-react';
 
@@ -42,7 +43,7 @@ const AICopilot = () => {
   useEffect(() => {
     const fetchGoalData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/goals');
+        const response = await fetch(`${API_BASE}/goals`);
         const data = await response.json();
         setGoal(data.daily_target || 50000); 
       } catch (error) {
@@ -61,7 +62,7 @@ const AICopilot = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/chat', {
+      const response = await fetch(`${API_BASE}/chat` {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
