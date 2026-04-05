@@ -96,11 +96,21 @@ _feedback_store: dict = {}
 async def chat_with_agent(payload: ChatRequest):
     """Entry point for the Agentic AI Financial Co-pilot."""
     try:
+        if not payload.message or not payload.message.strip():
+            return {"response": "Please send me a message! 😊"}
+        
         ai_reply = run_co_pilot(payload.message)
+        if not ai_reply:
+            return {"response": "I'm processing that. Could you rephrase? 🤔"}
+        
         return {"response": ai_reply}
+    
     except Exception as e:
-        log_warn(f"Agent Error: {e}")
-        return {"response": "I'm recalibrating my sensors. Try again in a moment! 🤖"}
+        log_warn(f"Agent Error: {str(e)}")
+        return {
+            "response": "I'm recalibrating my sensors. Try again in a moment! 🤖",
+            "error_detail": str(e)
+        }
 
 # ── Routes: Health & Auth ────────────────────────────────────────────────
 
