@@ -1,4 +1,4 @@
-# DriverIntel: Advanced Driver Safety & Behavior Analytics
+# DriveIntel: Advanced Driver Safety & Behavior Analytics
 
 <div align="center">
   <p><strong>A state-of-the-art Web Application designed to improve driver safety, behavior, and efficiency in the ride-hailing industry through Artificial Intelligence.</strong></p>
@@ -8,20 +8,20 @@
 
 ## 🚀 Welcome to DriverIntel
 
-**DriverIntel** is a real-time driver safety & behavior analytics platform built exclusively for ride-hailing drivers. By leveraging on-device sensor data (accelerometer, gyroscope, and microphone) via Machine Learning (ML) models, it detects stressful driving situations, analyzes dangerous behavior patterns, and provides highly personalized safety coaching—all wrapped in a stunning, premium dark-themed glassmorphic user interface.
+**DriveIntel** is a real-time driver safety & behavior analytics platform built exclusively for ride-hailing drivers. By leveraging on-device sensor data (accelerometer, gyroscope, and microphone) via Machine Learning (ML) models, it detects stressful driving situations, analyzes dangerous behavior patterns, and provides highly personalized safety coaching—all wrapped in a stunning, premium dark-themed glassmorphic user interface.
 
-- **Live Application:** [DriverIntel Alpha Vercel](https://driveintel-alpha.vercel.app/)
-- **Demo Video:** [YouTube Demo](https://youtu.be/PL-XsfVfLA0?feature=shared)
+- **Live Application:** [DriveIntel Vercel](https://driverinteliit-two.vercel.app/)
+- **Demo Video:** [Demo Video](https://drive.google.com/file/d/1eSTnfiRwqniG5sTF4P6sWFG3MokTa2OS/view?usp=sharing)
 
 **Demo Credentials:**
-> **Username:** `demo@driveintel.com`
-> **Password:** `demo2026`
+> **Username:** `alex.kumar`
+> **Password:** `password123`
 
 ---
 
 ## ✨ Core Features
 
-DriverIntel provides a complete suite of powerful tools designed for both individual drivers and ride-hailing platform analysts:
+DriveIntel provides a complete suite of powerful tools designed for both individual drivers and ride-hailing platform analysts:
 
 *   **📊 Dynamic Dashboard** — Get a comprehensive daily trip overview, your overall safety score, a stress event timeline, and high-level behavior insights at a glance.
 *   **🗺️ Interactive Trip Mapping** — **Risk along route:** Leaflet maps with dynamically severity-colored route segments based on live event timestamps. Includes playback cursors and rich popups explaining the severity, model confidence, and safety logic.
@@ -30,13 +30,13 @@ DriverIntel provides a complete suite of powerful tools designed for both indivi
 *   **🔮 Predict & Preview** — Enter raw sensor telemetry for instant stress prediction. Also features a preview Map with high-risk geographical zones.
 *   **📁 Batch Processing** — Built for analysts. Upload a CSV of multi-driver telemetry and run large-scale inference simultaneously for macro-level safety analysis.
 *   **🤖 AI Co-Pilot Assistant** — An integrated, context-aware AI Safety Assistant (powered by Google Gemini) ready to provide interactive, personalized coaching and guidance on demand.
-*   **🔍 Explainable AI (XAI)** — Understand *why* an event was flagged. DriverIntel provides per-event feature contributions (e.g., high lateral acceleration) and model confidence percentages.
+*   **🔍 Explainable AI (XAI)** — Understand *why* an event was flagged. DriveIntel provides per-event feature contributions (e.g., high lateral acceleration) and model confidence percentages.
 
 ---
 
 ## 🎨 Premium UI/UX
 
-DriverIntel utilizes a custom **High-Contrast Dark Glassmorphism** design language.
+DriveIntel utilizes a custom **High-Contrast Dark Glassmorphism** design language.
 The entire application was built iteratively to reflect an ultra-modern aesthetic standard using Tailwind CSS:
 
 *   **Vibrant Gradients over Deep Backgrounds** (`slate-950` / `slate-900`)
@@ -48,7 +48,7 @@ The entire application was built iteratively to reflect an ultra-modern aestheti
 
 ## 🏗️ Architecture
 
-DriverIntel uses a robust split architecture designed for performance and scale.
+DriveIntel uses a robust split architecture designed for performance and scale.
 
 ```mermaid
 flowchart LR
@@ -66,7 +66,7 @@ flowchart LR
 
 ### Folder Structure
 ```text
-DriverIntel/
+DriveIntel/
 ├── backend/                       # FastAPI REST API
 │   ├── main.py                    # Core routing and controllers
 │   ├── agent.py                   # LLM Integration (AI Safety Assistant)
