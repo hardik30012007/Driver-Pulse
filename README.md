@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Welcome to DriverIntel
+## 🚀 Welcome to DriveIntel
 
 **DriveIntel** is a real-time driver safety & behavior analytics platform built exclusively for ride-hailing drivers. By leveraging on-device sensor data (accelerometer, gyroscope, and microphone) via Machine Learning (ML) models, it detects stressful driving situations, analyzes dangerous behavior patterns, and provides highly personalized safety coaching—all wrapped in a stunning, premium dark-themed glassmorphic user interface.
 
